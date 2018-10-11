@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Прыклад 31</title>
+    </head>
+    <body>
+        <script>
+            var n = Number(prompt("Увядзіце лік n: "));
+             
+             var z = 1; // захоўвае вынік n
+            if (n>1){
+                var i = 2;
+                do {
+                    z=z*i;
+                    i++;
+                }
+                while(i <=+ n);
+                alert('Фактарыял ліку '+n+' роўны '+z);
+            } else if(n==0){
+                alert('Фактарыял ліку '+n+' роўны'+z);
+            } else if (isNaN(n) || n==' ' || n==''){
+                 alert('Вы ўвялі некарэктнае значэнне!');
+             } else if (n<0){
+                 alert('увядзіце дадатны лік!');
+             } 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Прыклад 30</title>
+    </head>
+    <body>
+         <script>
+             var x = prompt("Увядзіце лік х: ");
+             var y = prompt("Увядзіце лік у: ");
+             var z=+x;
+                 i = 2;
+                 if (y>0){
+                         while (i<=y){
+                               z=z*x;
+                               i++;
+                             }
+                        alert('Лік ' + x + ' у ступені ' + y + ' роўны ' + z);
+                 }  else if (y<0){
+                     z=Math.pow(x,y);
+                     alert('Лік ' + x + ' у ступені' + y + ' роўны ' + z);
+                 } else if (isNaN(x)|| isNaN(y) || x=='\u0020' || y=='\u0020' || x=='' || y=='')
+                  alert('Вы ўвялі некарэктнае значэнне!');
+                  else if (y==0){
+                     z=1;
+                     alert('Лік' + x + ' у ступені ' + y + ' роўны ' + z);
+                 }
+             
+         </script>
+    </body>
+</html>

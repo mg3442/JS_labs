@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Аператары галінаванняў і ўмоў у JavaScript</title>
+  </head>
+<body>
+  <script>
+    var year = prompt('У якім годзе ў Вас у групе пачаў весці заняткі Віталь Валянцінавіч?', '');
+	if (!parseInt(year) || isNaN(year) || year<=0){
+	    alert("Год уведзены некарэктна!");
+	 }
+    else if (year < 2018){
+	alert ('Не можа быць! Гэта вельмі  рана..');
+	}
+	else if (year > 2018) {
+	alert ('Вы што! Неяк пазнавата..');
+	}
+	else {
+	alert ('Вы знаўца! Так, дакладна ў гэтым годзе!');
+	}
+
+</script>
+</body>
+</html>

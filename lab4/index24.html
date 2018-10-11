@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Аператар ? і яго выкарыстанне</title>
+  </head>
+<body>
+  <script>
+    var a  = prompt('Увядзіце пераменную a');
+	var b  = prompt('Увядзіце пераменную b');
+	 var result = (!parseInt(a*b) || isNaN(a*b) || (a*b)<=0) ?
+	 "уведзены некарэктныя дадзеныя!":
+	 (Math.sqrt(a*b) <4) ? 'мала' : 'шмат';
+	alert (result);
+	
+	
+</script>
+</body>
+</html>
