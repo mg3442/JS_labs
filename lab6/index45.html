@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>  </head>
+  <body>
+  <script>
+		function checkAge(age){
+		  var age = prompt('Your age?');
+		    if(age>0 && age<150) {
+		      if(age>=18){
+		        alert ('Access is allowed!');
+		        return true;
+		      }
+		    else if(age < 18){
+		      var a = prompt('Parrents confirm? yes, no');
+		       if(a == 'yes')
+		        alert('Access is allowed!');
+		    	
+		    else 
+		      alert('Access is denied!');
+			}
+		
+		}
+		else alert('Access is denied! Input correct age!');
+		}
+		
+	checkAge();
+		
+ </script>
+  </body>
+</html>
+
+
