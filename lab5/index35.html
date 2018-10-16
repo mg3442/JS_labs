@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+
+      <title>Заданне 2</title>
+    </head>
+    <body>
+      <script>
+		var mushroomColor = window.prompt("Якога колеру грыб: белы? чырвоны?").toLowerCase();
+		var mushroomSkirt = window.prompt("У грыба ёсць спадніца: так? не?").toLowerCase();;
+		var mushroom;
+		
+		if(mushroomColor =='белы' && mushroomSkirt =='не') mushroom='1';
+		if(mushroomColor =='чырвоны' && mushroomSkirt =='так') mushroom='2';
+		if(mushroomColor =='чырвоны' && mushroomSkirt =='не') mushroom='3';
+		switch(mushroom){
+			case '1':
+				window.alert("вы знайшлі белы грыб");
+				break;
+			case '2':
+				window.alert("магчыма гэта мухамор");
+				break;
+			case '3':
+				window.alert("магчыма гэта падасінавік");
+				break;
+			default:
+				window.alert("з грыбамі трэба быць уважлівым");
+				break;
+		}
+	  </script>
+    </body>
+  </html>

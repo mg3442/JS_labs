@@ -7,17 +7,18 @@
         Увядзіце слова <br>
         <script>
           var where=window.prompt("Куды зазірнем сёння?");
-          if (where = "VK" || "vk" || "Vk" || "Вк" || "ВК" || "ВКонтакте" || "Контакт")
-             window.location="http://www.vk.com/";
-             else if (where = "Одноклассники")
-                 window.location="http://ok.ru/";
-             else if (where = "Facebook" || "Фейсбук" || "ФБ" || "fb" || "FB" || "фб")
-                 window.location="http://www.facebook.com/";
-             else if (where = "Instagram" || "insta" || "инста" || "Инста" || "Инстаграм" || "инстаграм" )
-                 window.location="http://instagram.com/";
-             else if (where = "Twitter" || "Твиттер")
-                 window.location="http://twitter.com/";
-             else window.location="http://www.exam.by/";
+		  where=where.toLowerCase();
+          if (where ==  "vk" || where == "вк" || where == "вконтакте" || where == "контакт")
+             window.location = "http://www.vk.com/";
+             else if (where == "одноклассники" || where == "ok")
+                 window.location = "http://ok.ru/";
+             else if (where == "facebook" || where == "фэйсбук" || where == "фейсбук" || where == "fb" || where == "фб")
+                 window.location = "http://www.facebook.com/";
+             else if (where == "instagram" || where == "insta" || where == "інста" || where =="інстаграм" || where =="инста" || where == "инстаграм" )
+                 window.location = "http://instagram.com/";
+             else if (where == "twitter" || where == "твітэр" || where == "твиттер")
+                 window.location = "http://twitter.com/";
+             else window.location = "http://www.exam.by/";
         </script>
     </body>
 </html>

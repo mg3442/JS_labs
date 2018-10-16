@@ -7,7 +7,7 @@
   <script>
     var a  = prompt('Увядзіце пераменную a');
 	var b  = prompt('Увядзіце пераменную b');
-	 var result = (!parseInt(a*b) || isNaN(a*b) || (a*b)<=0) ?
+	 var result = (isNaN(a*b) || (a*b)<0 || a==' ' || b==' ' || a=='' || b=='') ?
 	 "уведзены некарэктныя дадзеныя!":
 	 (Math.sqrt(a*b) <4) ? 'мала' : 'шмат';
 	alert (result);
