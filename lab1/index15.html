@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+  <body>
+    <script>
+      do{
+	    var name = new Object();
+	    name = prompt("Увядзіце сваё імя", "Імя");
+	    if (name==0 || name=='') {
+        alert('Вы ўвялі не імя!');
+		break;
+        }
+	    else{
+	    document.write('</br>Ваша імя '+ name +'. Вельмі рады знаёмству з Вамі!!!');
+	    }
+        var age = new Object();
+	    age = parseInt(prompt("Колькі Вам год, калі не сакрэт?", "35"));
+        if (isNaN(age)) {
+        alert('Вы ўвялі не лічбу!');
+		break;
+        }
+	    else if(age<=0 || age>130) {
+        alert('Некарэктна ўведзены ўзрост!');
+		break;
+        }
+	
+        else{
+        document.write('</br>Праз  10 год Вам будзе '+ (age+10) +' год.');
+        }
+        var again = confirm ("Пачаць наноў?");
+        }
+      while (again);
+</script>
+</body>
+</html>
