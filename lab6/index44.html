@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head> 
-    
+  <head>
+    <meta charset="UTF-8">
   </head>
-  <body>
+<body>
     <script>
-	  function  calcD(a,b,c) {
-	  
-	    return b * b - 4 * a * c;
-		}
-      var a  = prompt('Input variable a');
-	  var b  = prompt('Input variable b');
-	  var c = prompt('Input variable c');
-	  function isNumber(a) { return /^-?[\d.]+(?:e-?\d+)?$/.test(n);
-	  } 
-             if (a!=0 && b!=0&& c!=0 ) {
-              var discriminant = calcD(a, b ,c);
-			  
-              if(!isNaN(discriminant))
-              alert('D='+discriminant);
-			  
-             else alert("Not correct value");
+         function calcD(a, b, c){
+            return b*b-4*a*c;
+        }
+        
+         function checkCoef(x){
+            if (!isNaN(x) && x!="" && x!=' '){
+            return true;
             }
-
-           else alert("Not correct value");
-	 
+            else {
+                alert('Уведзены няправільны каэфіцыент');
+            return false;
+            }
+        }
+        
+        function checkD(d){
+            if (d>0){
+            alert('D='+discriminant+', ураўненне мае 2 розныя карані');
+            }else if  (d==0){
+            alert('D='+discriminant+', ураўненне мае 2 аднолькавыя карані');
+            }
+            else if  (d<0){
+            alert('D='+discriminant+', ураўненне не мае рэчавых каранёў');
+            } 
+        }
+        
+        do{
+        var a = prompt('Увядзіце каэфіцыент a');
+            checkCoef(a);
+        }
+        while(!checkCoef(a));
+        
+        do{
+        var b = prompt('Увядзіце каэфіцыент b');
+            checkCoef(b);
+        }
+        while(!checkCoef(b));
+        do{
+        var c = prompt('Увядзіце каэфіцыент c');
+            checkCoef(c);
+        }
+        while(!checkCoef(c));
+            
+        var discriminant = calcD(a, b, c);
+        checkD(discriminant);
+        
     </script>
-  </body>
+</body>
 </html>
-
-

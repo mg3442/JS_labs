@@ -1,34 +1,27 @@
 <!DOCTYPE HTML>
 <html>
-    <meta charset="utf-8">
     <head>
+	    <meta charset="utf-8">
         <title>Прыклад 31</title>
     </head>
     <body>
         <script>
-            var n = Number(prompt("Увядзіце лік n: "));
-             
-             var z = 1; // захоўвае вынік n
-            if (n>1){
-                var i = 2;
+            var n=prompt('Увядзіце лік n: ');
+            var z=1; //z захоўвае вынік n!
+            if (n>1 && !isNaN(n) && n!='\u0020' && n!='') {
+                var i=2;
                 do {
-                    z=z*i;
-                    i++;
+                z=z*i;
+                i++;
                 }
-                while(i <=+ n);
+                while (i<=+n);
                 alert('Фактарыял ліку '+n+' роўны '+z);
-               } 
-			else if(n==0){
-                alert('Фактарыял ліку '+n+' роўны'+z);
-                } 
-			else if(n==1){
-                alert('Фактарыял ліку '+n+' роўны'+z);
-				}
-			else if (isNaN(n) || n==' ' || n==''){
-                 alert('Вы ўвялі некарэктнае значэнне!');
-             } else if (n<0){
-                 alert('увядзіце дадатны лік!');
-             } 
+            } else if (n=='0' || n=='1'){
+                z=1;
+                alert('Фактарыял ліку '+n+' роўны '+z);
+            } else {
+            alert('Недапушчальны лік');
+            }
         </script>
     </body>
 </html>
