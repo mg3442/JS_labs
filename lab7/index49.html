@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    
+    <title>Script example</title>
+    <script>
+            function openWin3() {
+                myWin = open("", "newWindow",
+          "width = 500,height = 400,status = yes,toolbar = 0,menubar = yes");
+          //open document
+          myWin.document.open();
+          //create doc
+          myWin.document.write("<html><head><title>On the fly!");
+          myWin.document.write("</title><style>#abzac1{color:navy;font-size:30px;text-align:center;}</style></head><body>");
+          myWin.document.write("<p id='abzac1'>");
+          myWin.document.write("Our html doc is created!<br>");
+          myWin.document.write("with the help of JS!");
+          myWin.document.write("</p>");
+          myWin.document.write("</body></html>");
+          // close doc(not window)
+          myWin.document.close();
+
+            }
+          </script>
+</head>
+<body>
+        
+             
+    <form style = "text-align:center;">
+        <input type="button" value ="On-the-fly" onClick ="openWin3()">
+    </form>
+</body>
+</html>

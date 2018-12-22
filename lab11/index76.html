@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html> 
+  <head> 
+    <meta charset="utf-8"> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <script> 
+     $(document).ready(function () {
+	         $("button").click(function() {
+			        var div = $("div");
+					div.animate({left: '100px'}, "slow");
+					div.animate({fontSize:'3em'}, "slow");
+                    
+			});
+	 });
+   </script>
+  </head> 
+   <body> 
+
+     <button> Запусціць анімацыю!</button>
+     <p> Па змаўчанню, усе HTML элементы маюць статычнае пазіцыянаванне і не могуць быць перамешчаны
+	 Для таго, каб кіраваць пазіцыянаваннем, памятайце, што ў першую чаргу, трэба задаць CSS-уласцівасць пазіцыянавання
+	 элемента: адносную, фіксаваную, ці абсалютную! </p>
+
+     <div style="background:#98bf21; height:130px;width:320px; position:absolute;"> Віталь Валянцінавіч</div>
+   </body>
+</html>

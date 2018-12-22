@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html> 
+ <head> 
+   <meta charset="utf-8"> 
+   <script src="http://code.jquery.com/jquery-latest.js">
+   </script>
+   <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                alert("Text: " + $("#test").text());
+            });
+            $("#btn2").click(function () {
+                alert("HTML: " + $("#test").html());
+            });
+            $("#btn3").click(function () {
+                alert("Value: " + $("#test1").val());
+            });
+        });
+    </script>
+  </head>
+  <body>
+    <p id="test">Гэта пэўны <b>паўтлусты</b> тэкст у абзацы.</p>
+    <button id="btn1">Паказаць Тэкст</button>
+    <button id="btn2">Паказаць HTML</button>
+    <br>
+    <p>Name: <input type="text" id="test1" value="Прозвішча, імя супрацоўніка"></p>
+    <button id="btn3">Паказаць значэнне поля ўводу Формы</button>
+  </body>
+</html>

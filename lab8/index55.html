@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<title> Navigator </title>
+	<script language="javascript">
+        var firstn=window.prompt("Увядзіце Ваша імя: ","Ваша імя")
+        if (firstn== ' ' || firstn== 0 || firstn<0 || firstn== "Ваша імя") {
+            window.alert('Вы не ўвялі імя!')
+			
+        }
+        else {
+        function welcome(){
+            var appname=navigator.appName
+            var appver=navigator.appVersion
+            window.alert("Прывітанне, "+firstn+"! Вы выкарыстоўваеце " +appname+". Версія"+appver+". Дзякуй за Ваш візіт!");
+        }
+            function writename() {
+                document.write(firstn+".");
+            }
+        
+        }
+	</script>
+  </head>
+  <body onload="welcome()">
+    Вітаем Вас,
+    <script language="javascript">
+    writename();
+    </script>
+  </body>
+</html>

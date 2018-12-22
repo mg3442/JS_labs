@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"> 
+	<title>Index102</title>
+	<script>
+      const array = ['a', 'b', 'c', 'b', 'a'];
+      const str = array.sort();
+      for (let i = 0; i < str.length; i++) {
+ 	  if(str[i] == str[i+1]) delete str[i];
+      }
+      console.log(str.join().replace(/,/gm,"").split(""));
+    </script>
+  </head>
+  <body>
+  Sort
+</body>
+</html

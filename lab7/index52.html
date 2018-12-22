@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title> Individual work </title>	
+  </head>
+
+    <script type="text/javascript">
+	  function open1(){
+        var OpenWindow= window.open('', 'newwin', config = 'height= 300, width=500');
+        OpenWindow.document.write("<html>");
+        OpenWindow.document.write("<title>New window </title>");
+        OpenWindow.document.write("<body >");
+        OpenWindow.document.write("<center  style=' background-color: b2eded; width:500px; height:300px;'>");
+        OpenWindow.document.write("<font size=+3>Our new window</font><p>");
+        OpenWindow.document.write("<a href='https://www.intuit.ru/'  target='main'>This is link to <br> https://www.intuit.ru/</a><p>");
+        OpenWindow.document.write("<p><HR width='60%'><p>");
+        OpenWindow.document.write("<a href='http://izi.vlsu.ru'  target='main'>This is link to <br> http://izi.vlsu.ru </a><p>");
+        OpenWindow.document.write("<p><HR width='60%'><p>");
+        OpenWindow.document.write("<a href='' onClick='self.close()'>This link will shut the window</a><p>");
+        OpenWindow.document.write("</center>");
+        OpenWindow.document.write("</html>");
+       }
+    </script>
+  
+   <body> 
+ 	 <button onclick="open1()"> Page  launch in a new window</button>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Recreation</title>
+    <style>
+      a{
+        color:#2F12E9;
+      }
+      a:active {
+        color: #2F12E9;
+      }
+      a:focus{
+        color: #2F12E9;
+      }
+    </style>
+    <script language="javascript">
+        function getProperty(){
+        var body = document.getElementsByTagName('body')[0];
+        var a = document.createElement( 'a' );
+        body.appendChild( a ); 		
+        var bgc =  window.getComputedStyle(document.body,null).getPropertyValue("background-color");	
+        var fgc =  window.getComputedStyle(document.body,null).getPropertyValue("color");
+        var lc =  window.getComputedStyle(a, null).getPropertyValue("color");		
+        var al = window.getComputedStyle(a, ':active').getPropertyValue("color");
+        var vlc = window.getComputedStyle(a, ':focus').getPropertyValue("color");	
+        var url = document.location;
+        var ref = document.referrer;
+        var t = document.title;
+        var lm = document.lastModified;
+        document.write('<br> Колер фона гэтай старонкі <b>' + bgc + '</b>.');
+        document.write('<br> Колер тэкста гэтай старонкі <b>' + fgc + '</b>.');
+        document.write('<br> Колер спасылак гэтай старонкі <b>' + lc + '</b>');
+        document.write('<br> Колер актыўнай спасылкі гэтай старонкі <b>' + al + '</b>.');
+        document.write('<br> Колер наведанай спасылкі гэтай старонкі <b>' + vlc + '</b>.');
+        document.write('<br> URL гэтай старонкі <b>' + url + '</b>.');
+        document.write('<br> Да гэтага вы былі на старонцы <b>' + ref + '</b>.');
+        document.write('<br> Загаловак гэтай старонкі <b>' + t + '</b>.');
+        document.write('<br> Апошнія змены ў дакумент унесены: <b>' + lm + '</b>.');
+    };
+    </script>
+  </head>
+  <body>
+      <button onClick="getProperty()">Try it</button>
+  </body>
+</html>

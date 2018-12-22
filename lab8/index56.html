@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Уласцівасці аб'екту Document</title>
+  </head>
+  <body>
+    <script lang="javascript">
+        var bgc = document.bgColor;
+        var fgc = document.fgColor;
+        var lc = document.linkColor;
+        var al = document.alinkColor;
+        var vlc = document.vlinkColor;
+        var url = document.location;
+        var ref = document.referrer;
+        var t = document.title;
+        var lm = document.lastModified;
+        document.write('Выснова: атрыбуты, выкарыстаныя ў дадзеным прыкладзе састарэлі і асуджаюцца спецыфікацыяй HTML,')
+		document.write ('валідны код  у сучасных браузэрах можа атрымацца пры выкарыстанні пераходнага !DOCTYPE')
+        document.write('<br> Колер фона гэтай старонкі <b>' + bgc + '</b>.');
+        document.write('<br> Колер тэкста гэтай старонкі <b>' + fgc + '</b>.');
+        document.write('<br> Колер спасылак гэтай старонкі <b>' + lc + '</b>');
+        document.write('<br> Колер актыўнай спасылкі гэтай старонкі <b>' + al + '</b>.');
+        document.write('<br> Колер наведанай спасылкі гэтай старонкі <b>' + vlc + '</b>.');
+        document.write('<br> URL гэтай старонкі <b>' + url + '</b>.');
+        document.write('<br> Да гэтага вы былі на старонцы <b>' + ref + '</b>.');
+        document.write('<br> Загаловак гэтай старонкі <b>' + t + '</b>.');
+        document.write('<br> Апошнія змены ў дакумент унесены: <b>' + lm + '</b>.');
+        
+    </script>
+  </body>
+</html>
